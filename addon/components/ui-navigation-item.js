@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import layout from '../templates/components/ui-navbar-item';
+import layout from '../templates/components/ui-navigation-item';
 
 const item = Ember.Component.extend({
   layout: layout,
@@ -22,5 +22,5 @@ item.reopenClass({
   positionalParams: ['title']
 });
 
-item[Ember.NAME_KEY] = 'ui-navbar-item';
+item[Ember.NAME_KEY] = 'ui-navigation-item';
 export default item;

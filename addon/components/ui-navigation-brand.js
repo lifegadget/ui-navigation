@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import layout from '../templates/components/ui-navbar-brand';
+import layout from '../templates/components/ui-navigation-brand';
 
 const brand = Ember.Component.extend({
   layout: layout,
@@ -16,5 +16,5 @@ brand.reopenClass({
   positionalParams: ['title']
 });
 
-brand[Ember.NAME_KEY] = 'ui-navbar-brand';
+brand[Ember.NAME_KEY] = 'ui-navigation-brand';
 export default brand;

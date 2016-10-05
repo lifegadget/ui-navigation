@@ -3,7 +3,7 @@
 const sass = require('node-sass');
 const fs = require('fs');
 const path = require('path');
-const moduleName = 'ui-navbar';
+const moduleName = 'ui-navigation';
 const chalk = require('chalk');
 
 const inputFile = path.join(__dirname, 'app', 'styles', `${moduleName}.scss`);

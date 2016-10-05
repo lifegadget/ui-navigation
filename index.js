@@ -6,7 +6,7 @@ const Funnel = require('broccoli-funnel');
 const mergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
-  name: 'ui-navbar',
+  name: 'ui-navigation',
    description: 'An Ember-flavoured Bootstrap 4.x eco-system',
 
   included(app, parentAddon) {
@@ -19,11 +19,11 @@ module.exports = {
       const sassOptions = app.options.sassOptions || { includePaths: []};
       sassOptions.includePaths.push(scssPath);
     } else {
-      this.ui.writeLine(chalk.bold('ui-navbar: ') +
+      this.ui.writeLine(chalk.bold('ui-navigation: ') +
         ' did not detect ' +
         chalk.bold.green('ember-cli-sass') +
         ' so using static CSS configuration.');
-      target.import('vendor/ui-navbar/ui-navbar.css');
+      target.import('vendor/ui-navigation/ui-navigation.css');
     }
   },
 

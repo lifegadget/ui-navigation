@@ -17,7 +17,7 @@ module.exports = {
   beforeCommit: function (project, versions) {
     require('../compile-css.js');
     return new RSVP.Promise(function (resolve) {
-      simpleGit.add(['vendor/ui-navbar/ui-navbar.css'], function () {
+      simpleGit.add(['vendor/ui-navigation/ui-navigation.css'], function () {
         resolve();
       });
     });

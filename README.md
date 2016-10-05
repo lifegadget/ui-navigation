@@ -1,27 +1,18 @@
-# Ui-navbar
+# Ui-navigation
+> Navigational menu's for ambitious Ember apps
 
-This README outlines the details of collaborating on this Ember addon.
+  ## Goal
 
-## Installation
+  This is addon is meant to provide a horizontal navigation control and be flexible enough in styling to look appropriate on the desktop, IOS, and Android.
 
-* `git clone <repository-url>` this repository
-* `cd ui-navbar`
-* `npm install`
-* `bower install`
+  ## Installation
 
-## Running
+  At the console:
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+  ```sh
+  ember install ui-navigation
+  ```
 
-## Running Tests
+  ## Demo and Docs
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+  

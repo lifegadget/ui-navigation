@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import NavHandlerMixin from 'ui-navbar/mixins/nav-handler';
+import NavHandlerMixin from 'ui-navigation/mixins/nav-handler';
 import { module, test } from 'qunit';
 
 module('Unit | Mixin | nav handler');

@@ -1,4 +1,4 @@
-{{#ui-navbar
+{{#ui-navigation
   selected=currentPath
   mood='primary'
   onChange=(action 'navHandler')
@@ -8,10 +8,10 @@
 
   {{#nav.items}}
   {{#nav.brand
-    linkTo='https://github.com/lifegadget/ui-navbar'
+    linkTo='https://github.com/lifegadget/ui-navigation'
   }}
     {{icon 'github' size='2.5rem'}}
-    ui-navbar
+    ui-navigation
   {{/nav.brand}}
     {{nav.item 'Intro' routeTo='index'}}
     {{nav.item 'Demo' routeTo='demo'}}
@@ -20,4 +20,4 @@
       <img alt="fury" src="https://badge.fury.io/js/ui-button.svg">
     {{/nav.right}}
   {{/nav.items}}
-{{/ui-navbar}}
+{{/ui-navigation}}
