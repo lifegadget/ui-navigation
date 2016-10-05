@@ -1,0 +1,1 @@
+export { default } from 'ui-navbar/components/ui-navbar-items';

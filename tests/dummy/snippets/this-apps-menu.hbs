@@ -1,0 +1,23 @@
+{{#ui-navbar
+  selected=currentPath
+  mood='primary'
+  onChange=(action 'navHandler')
+
+  as |nav|
+}}
+
+  {{#nav.items}}
+  {{#nav.brand
+    linkTo='https://github.com/lifegadget/ui-navbar'
+  }}
+    {{icon 'github' size='2.5rem'}}
+    ui-navbar
+  {{/nav.brand}}
+    {{nav.item 'Intro' routeTo='index'}}
+    {{nav.item 'Demo' routeTo='demo'}}
+    {{nav.item 'Related Addons' routeTo='related'}}
+    {{#nav.right}}
+      <img alt="fury" src="https://badge.fury.io/js/ui-button.svg">
+    {{/nav.right}}
+  {{/nav.items}}
+{{/ui-navbar}}

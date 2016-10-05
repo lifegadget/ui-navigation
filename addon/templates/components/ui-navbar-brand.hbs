@@ -1,0 +1,7 @@
+<div class="navbar-brand{{if (or linkTo routeTo) ' link'}}" onclick={{action 'onChange' this}}>
+  {{#if hasBlock}}
+    {{yield}}
+  {{else}}
+    {{title}}
+  {{/if}}
+</div>

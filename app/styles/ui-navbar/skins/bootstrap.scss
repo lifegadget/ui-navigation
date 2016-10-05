@@ -1,0 +1,87 @@
+$enable-flex: true;
+@import 'bootstrap-source/variables';
+
+  @import 'bootstrap-source/mixins/border-radius';
+  @import 'bootstrap-source/mixins/clearfix';
+  @import 'bootstrap-source/mixins/breakpoints';
+  @import 'bootstrap-source/mixins/navbar-align';
+  @import 'bootstrap-source/mixins/nav-divider';
+  @import 'bootstrap-source/mixins/hover';
+  @import 'bootstrap-source/mixins/background-variant';
+  @import 'bootstrap-source/utilities/flex';
+  @import 'bootstrap-source/utilities/background';
+
+  @import 'bootstrap-source/nav';
+  @import 'bootstrap-source/navbar';
+
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+
+  ul.navbar-nav {
+    display: flex;
+    flex: 1 0;
+    flex-basis: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+
+    &.right {
+      flex: 1 0;
+      justify-content: flex-end;
+    }
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.link {
+      cursor: pointer;
+    }
+  }
+
+  .nav-link {
+    display: flex !important;
+    cursor: pointer;
+  }
+
+  .ui-navbar-item {
+    @extend .nav-item;
+  }
+
+  .primary-mood {
+    @extend .bg-primary;
+  }
+  .secondary-mood {
+    background-color: $mood-secondary;
+  }
+  .info-mood {
+    @extend .bg-info;
+  }
+  .warning-mood {
+    @extend .bg-warning;
+  }
+  .danger-mood {
+    @extend .bg-danger;
+  }
+  .dark-mood {
+    background-color: $mood-dark;
+  }
+  .aged-mood {
+    background-color: $mood-aged;
+  }
+  .faint-mood {
+    background-color: $mood-faint;
+  }
+
+.skin-bootstrap {
+  // TODO
+}
+

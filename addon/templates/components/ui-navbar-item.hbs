@@ -1,0 +1,12 @@
+<li class="nav-item {{if _matchedValue 'active'}} {{class}}">
+  <div class="nav-link" onclick={{action 'onChange' this}}>
+    {{#if hasBlock}}
+      {{yield}}
+    {{else}}
+      {{title}}
+      {{#if _matchedValue 'active'}}
+        <span class="sr-only">(current)</span>
+      {{/if}}
+    {{/if}}
+  </div>
+</li>

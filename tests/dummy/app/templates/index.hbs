@@ -1,0 +1,42 @@
+{{#markdown-convert style='github'}}
+
+  ## Goal
+
+  This is addon is meant to provide a horizontal navigation control and be flexible enough in styling to look appropriate on the desktop, IOS, and Android.
+
+  ## Installation
+
+  At the console:
+
+  ```sh
+  ember install ui-navbar
+  ```
+
+  ### Including styling
+
+  If you're using SASS then you will need to use the import directive in your `app.scss` file:
+
+  {{/markdown-convert}}
+  {{code-snippet name='include-sass-styling.scss'}}
+  {{#markdown-convert style='github'}}
+
+  > **Note**: at present only the bootstrap styling is implemented but others will be added over time.
+
+  Also bear in mind, that in the above step all you are doing is adding the styling you are using. As you'll see in the interactive demo, you can decide which to use at run-time with the `skin` parameter.
+
+  If you are using CSS (aka, not using SASS) then you will need to state which styling you will want in your `config/environment.js` file:
+
+  ## Seeing is Believing
+{{/markdown-convert}}
+<div class="flex">
+  <div class="text flex fill">
+
+  {{#markdown-convert style='github'}}
+    As you may have guessed the above navbar is in fact an _example_ of this addon. The code used to create this is to the right, click on the "demo" link above to see an interactive example.
+
+  {{/markdown-convert}}
+  </div>
+  <div class="flex" >
+    {{code-snippet name='this-apps-menu.hbs'}}
+  </div>
+</div>
