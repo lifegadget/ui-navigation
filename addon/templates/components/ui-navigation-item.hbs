@@ -4,7 +4,7 @@
       {{yield}}
     {{else}}
       {{title}}
-      {{#if _matchedValue 'active'}}
+      {{#if (eq _matchedValue 'active')}}
         <span class="sr-only">(current)</span>
       {{/if}}
     {{/if}}
