@@ -12,12 +12,10 @@ module.exports = {
   included(app, parentAddon) {
     const target = (parentAddon || app);
     this._super.included(target);
-    const scssPath = path.join('node_modules', 'bootstrap/scss');
-    const cssPath = path.join('node_modules', 'bootstrap/dist/css');
 
     if (app.registry.availablePlugins['ember-cli-sass']) {
       const sassOptions = app.options.sassOptions || { includePaths: []};
-      sassOptions.includePaths.push(scssPath);
+      sassOptions.includePaths.push(path.join(__dirname, 'ui-navigation', 'bootstrap-source'));
     } else {
       this.ui.writeLine(chalk.bold('ui-navigation: ') +
         ' did not detect ' +
@@ -33,7 +31,7 @@ module.exports = {
     if(tree) {
       trees.push(tree);
     }
-    const bootstrapPath = path.join('node_modules', 'bootstrap/scss');
+    const bootstrapPath = path.join(__dirname, 'node_modules', 'bootstrap/scss');
     const bootstrap = new Funnel(bootstrapPath, {
       srcDir: '/',
       destDir: '/bootstrap-source'
