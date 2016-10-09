@@ -526,6 +526,8 @@ ul.navbar-nav {
   .nav-item.right, .right.ui-nav-item {
     flex: 1 0;
     justify-content: flex-end; }
+    .nav-item.right .nav-link, .right.ui-nav-item .nav-link {
+      justify-content: flex-end; }
 
 .navbar-brand {
   display: flex;
