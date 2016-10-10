@@ -31,7 +31,7 @@ module.exports = {
     if(tree) {
       trees.push(tree);
     }
-    const bootstrapPath = path.join(__dirname, 'node_modules', 'bootstrap/scss');
+    const bootstrapPath = path.join('node_modules', 'bootstrap/scss');
     const bootstrap = new Funnel(bootstrapPath, {
       srcDir: '/',
       destDir: '/bootstrap-source'
@@ -46,6 +46,6 @@ module.exports = {
   },
 
   isDevelopingAddon: function () {
-    return true;
+    return false;
   }
 };
