@@ -7,7 +7,7 @@ const mergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
   name: 'ui-navigation',
-   description: 'An Ember-flavoured Bootstrap 4.x eco-system',
+   description: 'An out-of-the-box navbar solution for Ember',
 
   included(app, parentAddon) {
     const target = (parentAddon || app);
