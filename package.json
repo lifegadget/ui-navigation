@@ -1,6 +1,6 @@
 {
   "name": "ui-navigation",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Navigational menu's for ambitious Ember apps",
   "directories": {
     "test": "tests"
