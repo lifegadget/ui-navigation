@@ -13,6 +13,12 @@ At the console:
 ember install ui-navigation
 ```
 
+If you're using SASS, add the following to your `app.scss` file:
+
+```css
+@import 'ui-navigation';
+``` 
+
 ## Demo and Docs
 
 [https://ui-navbar.firebaseapp.com/](https://ui-navbar.firebaseapp.com/)
