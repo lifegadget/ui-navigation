@@ -1,4 +1,4 @@
-<nav class="nav navbar navbar-{{if light 'light' 'dark'}} {{mood}}-mood">
+<nav class="navbar navbar-toggleable navbar-{{if light 'light' 'dark'}} {{mood}}-mood">
   {{yield (hash
     brand=(component 'ui-navigation-brand' onChange=(action 'onChange') selected=nav.selected)
     items=(component 'ui-navigation-items' )

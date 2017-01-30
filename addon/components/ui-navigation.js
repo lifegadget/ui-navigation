@@ -4,7 +4,7 @@ import layout from '../templates/components/ui-navigation';
 export default Ember.Component.extend({
   layout: layout,
   tagName: '',
-  light: false, // light or dark
+  light: true, // light or dark
   full: false,
   fixed: null, // null, up or down
   mood: 'primary',
